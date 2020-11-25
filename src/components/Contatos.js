@@ -38,7 +38,7 @@ export default function Contatos(){
                                 <Text style={styles.titulo}>{d.nome}</Text>
                                 <Text>{d.cargo}</Text>
                                 <TouchableOpacity
-                                  onPress={Linking.openURL(`tel:${d.phone}`)}
+                                  onPress={() => Linking.openURL(`tel:${d.phone}`)}
                                   style={styles.detalhesButton}>
                                   <Icon name='phone' size={28} color='#ffffff'/>
                                 </TouchableOpacity>
